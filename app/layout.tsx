@@ -5,7 +5,7 @@ import { Nunito } from "next/font/google";
 import { cn } from "@/lib/utils";
 
 // Components
-import FooterWrapper from "@/components/footer/footer-wrapper";
+import Footer from "@/components/footer/footer";
 
 const fontDisplay = Nunito({
   subsets: ["latin"],
@@ -37,7 +37,7 @@ export default function RootLayout({
         )}
       >
         {children}
-        <FooterWrapper />
+        <Footer />
       </body>
     </html>
   );
