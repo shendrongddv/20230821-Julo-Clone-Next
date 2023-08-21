@@ -94,7 +94,7 @@ h6 {
 }
 
 .h2 {
-  @apply text-2xl leading-snug md:text-4xl;
+  @apply text-2xl leading-snug md:text-[32px];
 }
 
 .h3 {
@@ -103,4 +103,8 @@ h6 {
 
 .h4 {
   @apply leading-snug;
+}
+
+.subtitle {
+  @apply text-lg md:text-xl;
 }
