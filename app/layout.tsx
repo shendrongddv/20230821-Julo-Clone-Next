@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 
 // Components
 import Footer from "@/components/footer/footer";
+import Header from "@/components/header/header";
 
 const fontDisplay = Nunito({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
           fontBody.variable,
         )}
       >
+        <Header />
         {children}
         <Footer />
       </body>
