@@ -21,12 +21,12 @@ export default function Homepage() {
           <div className="grid gap-10 md:grid-cols-2">
             {/* Col */}
             <div className="flex h-full flex-col justify-end">
-              <h1 className="text-4xl font-bold leading-snug text-[#404040] md:text-5xl">
+              <h1 className="text-3xl font-bold leading-snug text-[#404040] md:text-5xl">
                 Hidupkan Hidupmu Bersama{" "}
                 <span className="text-[#00acf0]">JULO</span> Kredit Online dan
                 Pinjaman
               </h1>
-              <p className="mt-4 text-2xl">
+              <p className="mt-4 text-xl md:text-2xl">
                 Ajukan layanan kredit digital yang sesuai dengan kebutuhan kamu.
               </p>
             </div>
