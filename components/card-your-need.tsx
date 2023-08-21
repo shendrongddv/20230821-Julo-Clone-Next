@@ -19,7 +19,7 @@ const YourNeedCard = () => {
             alt={item.title}
             width={112}
             height={112}
-            className="h-16 w-auto md:h-28"
+            className="h-14 w-auto md:h-28"
           />
           <h4 className="h4 text-xs font-semibold text-secondary-foreground md:w-3/5 md:text-base md:font-bold">
             {item.title}
