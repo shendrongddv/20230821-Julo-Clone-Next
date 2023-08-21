@@ -56,7 +56,7 @@ export default function Homepage() {
                     className={cn(
                       buttonVariants({
                         variant: "secondary",
-                        size: "default",
+                        size: "lg",
                         className:
                           "w-full bg-secondary-foreground font-bold text-white hover:bg-secondary-foreground hover:text-white md:px-12",
                       }),
