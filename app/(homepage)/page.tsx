@@ -27,6 +27,7 @@ import {
   contentReviews,
   contentPartners,
   contentMedia,
+  contentFastAndSecureProcess,
 } from "@/content/content";
 
 export default function Homepage() {
@@ -120,7 +121,7 @@ export default function Homepage() {
 
       {/* Banner */}
       <section id="ID" className="px-4 py-16">
-        <div className="container">
+        <div className="container space-y-8 md:px-32">
           <div className="flex">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
             ea veniam cumque.
@@ -132,10 +133,10 @@ export default function Homepage() {
       <div className="bg-gradient-to-b from-white from-60% to-[#82dcfe] to-100%">
         {/* Process */}
         <section id="process" className="px-4 py-16">
-          <div className="container">
+          <div className="container space-y-8 rounded-3xl border px-1 py-1 md:border-4 md:border-slate-100 md:px-32 md:py-16">
             <div className="flex flex-col gap-8">
               {/* # */}
-              <div className="space-y-2">
+              <div className="space-y-2 max-md:px-3 max-md:pt-5">
                 <h2 className="h2 font-bold text-secondary-foreground">
                   Proses yang Cepat dan Aman
                 </h2>
@@ -146,7 +147,30 @@ export default function Homepage() {
               </div>
 
               {/* # */}
-              <WhyUsCard />
+              <div className="grid gap-4 md:grid-cols-3">
+                {contentFastAndSecureProcess?.map((item) => (
+                  <div
+                    key={item.id}
+                    className="space-y-4 rounded-2xl p-3 transition duration-300 hover:bg-slate-50"
+                  >
+                    <div className="flex items-center gap-4 md:flex-col md:items-start">
+                      <div className="flex h-8 w-8 justify-center md:h-12 md:w-12">
+                        <Image
+                          src={`/icons/${item.media}`}
+                          alt={item.title}
+                          width={54}
+                          height={54}
+                          className="h-full w-auto"
+                        />
+                      </div>
+                      <h3 className="h3 font-display font-bold text-secondary-foreground max-md:w-3/4">
+                        {item.title}
+                      </h3>
+                    </div>
+                    <p>{item.body}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -154,7 +178,7 @@ export default function Homepage() {
 
         {/* Services */}
         <section id="services" className="px-4 py-16">
-          <div className="container">
+          <div className="container space-y-8 md:px-32">
             <div className="flex flex-col gap-4 md:gap-8">
               <h2 className="h2 font-bold text-secondary-foreground">
                 Penuhi Segala Kebutuhan Finansialmu Bersama JULO
@@ -170,7 +194,7 @@ export default function Homepage() {
 
       {/* Promotion */}
       <section id="promotion" className="px-4 py-16">
-        <div className="container">
+        <div className="container space-y-8 md:px-32">
           <div className="flex">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
             ea veniam cumque.
@@ -181,7 +205,7 @@ export default function Homepage() {
 
       {/* Registration */}
       <section id="registration" className="px-4 py-16">
-        <div className="container">
+        <div className="container space-y-8 md:px-32">
           <div className="flex">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
             ea veniam cumque.
