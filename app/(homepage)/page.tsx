@@ -151,7 +151,7 @@ export default function Homepage() {
                 {contentFastAndSecureProcess?.map((item) => (
                   <div
                     key={item.id}
-                    className="space-y-4 rounded-2xl p-3 transition duration-300 hover:bg-slate-50"
+                    className="space-y-4 rounded-2xl p-3 transition duration-300 hover:bg-slate-100"
                   >
                     <div className="flex items-center gap-4 md:flex-col md:items-start">
                       <div className="flex h-8 w-8 justify-center md:h-12 md:w-12">
