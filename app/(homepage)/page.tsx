@@ -173,11 +173,18 @@ export default function Homepage() {
       {/* ./ Registration */}
 
       {/* Reviews */}
-      <section id="reviews" className="px-4 py-16">
-        <div className="container">
-          <div className="flex">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            ea veniam cumque.
+      <section
+        id="reviews"
+        className="bg-gradient-to-b from-secondary-foreground from-50% to-transparent to-50% px-4 py-16"
+      >
+        <div className="container md:px-32">
+          <div className="md:w-1/2">
+            <h2 className="h2 font-display font-bold text-secondary-foreground text-white">
+              Apa Kata Mereka?
+            </h2>
+            <p className="mt-3 text-lg font-semibold md:text-xl">
+              Lihat apa kata mereka mengenai pengalaman menggunakan JULO.
+            </p>
           </div>
         </div>
       </section>
@@ -185,32 +192,77 @@ export default function Homepage() {
 
       {/* Partners */}
       <section id="partners" className="px-4 py-16">
-        <div className="container">
-          <div className="flex">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            ea veniam cumque.
+        <div className="container md:px-32">
+          <div className="md:w-1/2">
+            <h2 className="h2 font-display font-bold text-secondary-foreground">
+              Mitra Terbaik Kami
+            </h2>
+            <p className="mt-3 text-lg font-semibold md:text-xl">
+              Mitra terbaik kami meliputi lembaga keuangan perbankan dan nonbank
+              di Indonesia.
+            </p>
           </div>
         </div>
       </section>
       {/* ./ Partners */}
 
       {/* Media */}
-      <section id="media" className="px-4 py-16">
-        <div className="container">
-          <div className="flex">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            ea veniam cumque.
+      <section id="media" className="bg-slate-100 px-4 py-16">
+        <div className="container md:px-32">
+          <div className="md:w-1/2">
+            <h2 className="h2 font-display font-bold text-secondary-foreground">
+              Publikasi Media
+            </h2>
+            <p className="mt-3 text-lg font-semibold md:text-xl">
+              Publikasi JULO meliputi berbagai media terbaik di Indonesia dan
+              mancanegara.
+            </p>
           </div>
         </div>
       </section>
       {/* ./ Media */}
 
       {/* CTA */}
-      <section id="cta" className="px-4 py-16">
-        <div className="container">
-          <div className="flex">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            ea veniam cumque.
+      <section
+        id="cta"
+        className="bg-gradient-to-b from-slate-100 from-50% to-white to-50% px-4 py-16"
+      >
+        <div className="container rounded-xl border bg-secondary-foreground px-4 py-8 md:border-spacing-1 md:rounded-3xl md:px-32 md:py-12">
+          <div className="flex flex-col-reverse gap-12 md:flex-row md:items-center md:justify-between">
+            {/* Col */}
+            <div className="flex w-full flex-col gap-3 md:w-3/6">
+              <h2 className="h2 font-display font-bold text-white">
+                Ajukan Limit Kredit Digital JULO Sekarang
+              </h2>
+              <p className="text-xl font-semibold text-white">
+                Dengan tenor fleksibel dan bunga rendah, nikmati kemudahan
+                transaksi dari fitur lengkap kredit digital untuk seluruh
+                layanan tanpa harus menggunakan kartu kredit!
+              </p>
+              <Link
+                href="/"
+                className={cn(
+                  buttonVariants({
+                    variant: "secondary",
+                    size: "lg",
+                    className: "mt-6 font-bold md:w-max",
+                  }),
+                )}
+              >
+                Download JULO Sekarang
+              </Link>
+            </div>
+
+            {/* Col */}
+            <div className="flex w-full items-center justify-center md:w-2/6">
+              <Image
+                src="/img-2.webp"
+                alt="Image"
+                width={400}
+                height={500}
+                className="h-auto w-3/5 md:w-full"
+              />
+            </div>
           </div>
         </div>
       </section>
