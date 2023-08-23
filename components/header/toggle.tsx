@@ -30,7 +30,7 @@ export function Toggle() {
       </SheetTrigger>
       <SheetContent
         side="left"
-        className="flex w-11/12 flex-col gap-4 overflow-y-auto p-0"
+        className="flex w-full flex-col gap-4 overflow-y-auto p-0"
       >
         <SheetHeader className="border-b px-5 py-4">
           <SiteBrand />
@@ -125,7 +125,7 @@ export function Toggle() {
           )}
         </ul>
         {/* ./Body */}
-        <SheetFooter className="mt-8 px-4">
+        <SheetFooter className="border-t px-4 py-8">
           <SheetClose asChild>
             <Button variant="destructive" size="default" className="">
               Download Aplikasi JULO
