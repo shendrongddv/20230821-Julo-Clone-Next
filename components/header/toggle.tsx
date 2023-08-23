@@ -18,6 +18,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { ScrollArea } from "../ui/scroll-area";
 
 export function Toggle() {
   return (
@@ -29,12 +30,14 @@ export function Toggle() {
       </SheetTrigger>
       <SheetContent
         side="left"
-        className="flex min-h-screen w-4/5 flex-col gap-4 overflow-y-auto p-0"
+        className="flex h-screen w-11/12 flex-col gap-4 overflow-y-auto p-0"
       >
         <SheetHeader className="border-b px-5 py-4">
           <SiteBrand />
         </SheetHeader>
-        <ul className="space-y-1 pl-1 pr-5">
+
+        {/* Body */}
+        <ul className="space-y-1 px-1">
           {MainNav?.map((item) =>
             item.subLinks === null ? (
               <li key={item.id}>
@@ -55,65 +58,73 @@ export function Toggle() {
                 </SheetClose>
               </li>
             ) : (
-              <Accordion
-                key={item.id}
-                type="single"
-                collapsible
-                className="w-full"
-              >
-                <AccordionItem value={item.id.toString()}>
-                  <AccordionTrigger
-                    className={cn(
-                      buttonVariants({
-                        variant: "ghost",
-                        size: "default",
-                        className: "justify-between",
-                      }),
-                    )}
-                  >
-                    {item.label}
-                  </AccordionTrigger>
-                  <AccordionContent className="border-b-0 border-l pl-2">
+              <li key={item.id}>
+                <div
+                  className={cn(
+                    buttonVariants({
+                      variant: "link",
+                      size: "default",
+                      className:
+                        "w-full justify-start gap-2 text-sm leading-none text-muted-foreground hover:no-underline",
+                    }),
+                  )}
+                >
+                  {item.label}
+                  <span className="h-[1px] flex-1 bg-muted-foreground/25"></span>
+                </div>
+                <Accordion asChild type="single" collapsible>
+                  <ul className="flex w-full flex-col gap-1">
                     {item.subLinks?.map((level2) => (
-                      <div key={level2.id}>
-                        <Button
-                          variant="ghost"
-                          size="default"
-                          className="w-full justify-start text-base"
+                      <li key={level2.id} className="w-full">
+                        <AccordionItem
+                          value={level2.id.toString()}
+                          className="border-b-0"
                         >
-                          {level2.label}
-                        </Button>
-
-                        <ul className="grid grid-cols-2 gap-2">
-                          {level2.subLinks?.map((level3) => (
-                            <li key={level3.id}>
-                              <SheetClose asChild>
-                                <Link
-                                  href={level3.url}
-                                  aria-label={level3.label}
-                                  className={cn(
-                                    buttonVariants({
-                                      variant: "ghost",
-                                      size: "default",
-                                      className:
-                                        "w-full justify-start text-base",
-                                    }),
-                                  )}
-                                >
-                                  {level3.label}
-                                </Link>
-                              </SheetClose>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                          <AccordionTrigger
+                            className={cn(
+                              buttonVariants({
+                                variant: "ghost",
+                                size: "default",
+                                className:
+                                  "justify-between text-base hover:no-underline",
+                              }),
+                            )}
+                          >
+                            {level2.label}
+                          </AccordionTrigger>
+                          <AccordionContent className="border-b-0 px-4">
+                            <ul className="grid w-full grid-cols-2 gap-2">
+                              {level2.subLinks?.map((level3) => (
+                                <li key={level3.id}>
+                                  <SheetClose asChild>
+                                    <Link
+                                      href={level3.url}
+                                      aria-label={level3.label}
+                                      className={cn(
+                                        buttonVariants({
+                                          variant: "outline",
+                                          size: "default",
+                                          className: "w-full",
+                                        }),
+                                      )}
+                                    >
+                                      {level3.label}
+                                    </Link>
+                                  </SheetClose>
+                                </li>
+                              ))}
+                            </ul>
+                          </AccordionContent>
+                        </AccordionItem>
+                      </li>
                     ))}
-                  </AccordionContent>
-                </AccordionItem>
-              </Accordion>
+                  </ul>
+                </Accordion>
+              </li>
             ),
           )}
         </ul>
+        {/* ./Body */}
         <SheetFooter className="mt-auto border-t px-5 py-4">
           <SheetClose asChild>
             <Button variant="destructive" size="default" className="">

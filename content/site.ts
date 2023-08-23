@@ -71,7 +71,7 @@ export const MainNav = [
         subLinks: [
           {
             id: 1,
-            label: "Pinjam Dana Online",
+            label: "Pinjam Online",
             icon: null,
             url: "/",
             subLinks: null,
@@ -171,14 +171,14 @@ export const MainNav = [
         subLinks: [
           {
             id: 1,
-            label: "Bayar Listrik",
+            label: "Listrik",
             icon: null,
             url: "/",
             subLinks: null,
           },
           {
             id: 2,
-            label: "Isi Pulsa & Data",
+            label: "Pulsa & Data",
             icon: null,
             url: "/",
             subLinks: null,
@@ -192,7 +192,7 @@ export const MainNav = [
           },
           {
             id: 4,
-            label: "Bayar BPJS",
+            label: "BPJS",
             icon: null,
             url: "/",
             subLinks: null,
@@ -206,7 +206,7 @@ export const MainNav = [
           },
           {
             id: 6,
-            label: "Biaya Pendidikan",
+            label: "Pendidikan",
             icon: null,
             url: "/",
             subLinks: null,
