@@ -53,6 +53,7 @@ export const MainNav = [
   {
     id: 1,
     label: "Beranda",
+    media: null,
     icon: null,
     url: "/",
     subLinks: null,
@@ -60,18 +61,21 @@ export const MainNav = [
   {
     id: 2,
     label: "Produk & Layanan",
+    media: null,
     icon: null,
     url: "/",
     subLinks: [
       {
         id: 1,
         label: "Dana Tunai",
+        media: "dana-tunai.svg",
         icon: null,
         url: "/",
         subLinks: [
           {
             id: 1,
             label: "Pinjam Online",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -79,6 +83,7 @@ export const MainNav = [
           {
             id: 2,
             label: "GoPay",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -86,6 +91,7 @@ export const MainNav = [
           {
             id: 3,
             label: "OVO",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -93,6 +99,7 @@ export const MainNav = [
           {
             id: 4,
             label: "LinkAja",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -100,6 +107,7 @@ export const MainNav = [
           {
             id: 5,
             label: "ShopeePay",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -107,6 +115,7 @@ export const MainNav = [
           {
             id: 6,
             label: "DANA",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -116,12 +125,14 @@ export const MainNav = [
       {
         id: 2,
         label: "Paylater",
+        media: "paylater.svg",
         icon: null,
         url: "/",
         subLinks: [
           {
             id: 1,
             label: "Tokopedia",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -129,6 +140,7 @@ export const MainNav = [
           {
             id: 2,
             label: "Bukalapak",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -136,6 +148,7 @@ export const MainNav = [
           {
             id: 3,
             label: "Shopee",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -143,6 +156,7 @@ export const MainNav = [
           {
             id: 4,
             label: "Lazada",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -150,6 +164,7 @@ export const MainNav = [
           {
             id: 5,
             label: "BliBli",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -157,6 +172,7 @@ export const MainNav = [
           {
             id: 6,
             label: "Tiket Kereta",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -166,12 +182,14 @@ export const MainNav = [
       {
         id: 3,
         label: "Tagihan Online",
+        media: "tagihan-online.svg",
         icon: null,
         url: "/",
         subLinks: [
           {
             id: 1,
             label: "Listrik",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -179,6 +197,7 @@ export const MainNav = [
           {
             id: 2,
             label: "Pulsa & Data",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -186,6 +205,7 @@ export const MainNav = [
           {
             id: 3,
             label: "Pascabayar",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -193,6 +213,7 @@ export const MainNav = [
           {
             id: 4,
             label: "BPJS",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -200,6 +221,7 @@ export const MainNav = [
           {
             id: 5,
             label: "PDAM",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -207,6 +229,7 @@ export const MainNav = [
           {
             id: 6,
             label: "Pendidikan",
+            media: null,
             icon: null,
             url: "/",
             subLinks: null,
@@ -218,6 +241,7 @@ export const MainNav = [
   {
     id: 3,
     label: "Tentang Kami",
+    media: null,
     icon: null,
     url: "/",
     subLinks: null,
@@ -225,6 +249,7 @@ export const MainNav = [
   {
     id: 4,
     label: "Berita & Tips",
+    media: null,
     icon: null,
     url: "/",
     subLinks: null,
@@ -232,6 +257,7 @@ export const MainNav = [
   {
     id: 5,
     label: "Promo",
+    media: null,
     icon: null,
     url: "/",
     subLinks: null,
@@ -239,6 +265,7 @@ export const MainNav = [
   {
     id: 6,
     label: "Bantuan",
+    media: null,
     icon: null,
     url: "/",
     subLinks: null,
@@ -246,6 +273,7 @@ export const MainNav = [
   {
     id: 6,
     label: "Karir",
+    media: null,
     icon: null,
     url: "/",
     subLinks: null,

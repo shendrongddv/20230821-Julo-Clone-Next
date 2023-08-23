@@ -19,6 +19,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { ScrollArea } from "../ui/scroll-area";
+import Image from "next/image";
 
 export function Toggle() {
   return (
@@ -33,7 +34,9 @@ export function Toggle() {
         className="flex w-full flex-col gap-4 overflow-y-auto p-0"
       >
         <SheetHeader className="border-b px-5 py-4">
-          <SiteBrand />
+          <SheetClose asChild>
+            <SiteBrand />
+          </SheetClose>
         </SheetHeader>
 
         {/* Body */}
@@ -90,7 +93,18 @@ export function Toggle() {
                               }),
                             )}
                           >
-                            {level2.label}
+                            <div className="flex items-center">
+                              <div className="mr-2 flex h-8 w-8 items-center justify-center">
+                                <Image
+                                  src={`/icons/${level2.media}`}
+                                  alt={level2.label}
+                                  width={32}
+                                  height={32}
+                                  className="h-full w-auto"
+                                />
+                              </div>
+                              {level2.label}
+                            </div>
                           </AccordionTrigger>
                           <AccordionContent className="border-b-0 px-4">
                             <ul className="grid w-full grid-cols-2 gap-2">

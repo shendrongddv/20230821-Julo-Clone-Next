@@ -56,6 +56,7 @@ const components: { title: string; href: string; description: string }[] = [
 // Contents
 import { MainNav } from "@/content/site";
 import { Button, buttonVariants } from "../ui/button";
+import Image from "next/image";
 
 export function NavLinks() {
   return (
@@ -77,9 +78,30 @@ export function NavLinks() {
                 <ul className="grid w-max gap-3 p-4 md:grid-cols-3">
                   {item.subLinks?.map((level2) => (
                     <li key={level2.id} className="flex flex-col">
-                      <Button disabled variant="outline" className="">
-                        {level2.label}
-                      </Button>
+                      <NavigationMenuLink>
+                        <Link
+                          href={level2.url}
+                          aria-label={level2.label}
+                          className={cn(
+                            buttonVariants({
+                              variant: "ghost",
+                              size: "default",
+                              className: "mb-1 justify-start",
+                            }),
+                          )}
+                        >
+                          <div className="mr-2 flex h-8 w-8 items-center justify-center">
+                            <Image
+                              src={`/icons/${level2.media}`}
+                              alt={level2.label}
+                              width={32}
+                              height={32}
+                              className="h-full w-auto"
+                            />
+                          </div>
+                          {level2.label}
+                        </Link>
+                      </NavigationMenuLink>
 
                       <ul className="flex flex-col gap-1">
                         {level2.subLinks?.map((level3) => (
@@ -129,7 +151,7 @@ const ListItem = React.forwardRef<
           )}
           {...props}
         >
-          <div className="text-sm font-medium leading-none">{title}</div>
+          <div className="text-sm font-semibold leading-none">{title}</div>
           <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
             {children}
           </p>
