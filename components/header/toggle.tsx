@@ -30,7 +30,7 @@ export function Toggle() {
       </SheetTrigger>
       <SheetContent
         side="left"
-        className="flex h-screen w-11/12 flex-col gap-4 overflow-y-auto p-0"
+        className="flex w-11/12 flex-col gap-4 overflow-y-auto p-0"
       >
         <SheetHeader className="border-b px-5 py-4">
           <SiteBrand />
@@ -83,7 +83,7 @@ export function Toggle() {
                           <AccordionTrigger
                             className={cn(
                               buttonVariants({
-                                variant: "ghost",
+                                variant: "link",
                                 size: "default",
                                 className:
                                   "justify-between text-base hover:no-underline",
@@ -125,7 +125,7 @@ export function Toggle() {
           )}
         </ul>
         {/* ./Body */}
-        <SheetFooter className="sticky bottom-0 left-0 z-10 mt-auto border-t px-5 py-4">
+        <SheetFooter className="mt-8 px-4">
           <SheetClose asChild>
             <Button variant="destructive" size="default" className="">
               Download Aplikasi JULO
