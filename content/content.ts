@@ -24,47 +24,47 @@ export const contentFastAndSecureProcess = [
 export const contentYourNeed = [
   {
     id: 1,
-    title: "Pinjaman Dana Tunai",
+    title: "Pinjaman Tunai",
     media: "1.svg",
   },
   {
     id: 2,
-    title: "Transfer Dana Tunai",
+    title: "Transfer Tunai",
     media: "2.svg",
   },
   {
     id: 3,
-    title: "Top Up Saldo E Wallet",
+    title: "Top Up E-Wallet",
     media: "3.svg",
   },
   {
     id: 4,
-    title: "Beli Pulsa / Paket Data",
+    title: "Pulsa & Data",
     media: "4.svg",
   },
   {
     id: 5,
-    title: "Bayar Tagihan Listrik",
+    title: "Bayar Listrik",
     media: "5.svg",
   },
   {
     id: 6,
-    title: "Bayar e-Commerce",
+    title: "E-commerce",
     media: "6.svg",
   },
   {
     id: 7,
-    title: "Bayar Tagihan BPJS Kesehatan",
+    title: "BPJS Kesehatan",
     media: "7.svg",
   },
   {
     id: 8,
-    title: "Bayar Biaya Sekolah",
+    title: "Biaya Sekolah",
     media: "8.svg",
   },
   {
     id: 9,
-    title: "Beli Tiket Kereta",
+    title: "Tiket Kereta",
     media: "9.svg",
   },
 ];
