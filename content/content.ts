@@ -68,3 +68,137 @@ export const contentYourNeed = [
     media: "9.svg",
   },
 ];
+
+// Reviews
+export const contentReviews = [
+  {
+    id: 1,
+    name: "Andri Yanto",
+    age: 29,
+    job: "Karyawan Swasta",
+    review:
+      "Awal kenal JULO dari media sosial dan JULO sangat membantu untuk renovasi rumah dan memenuhi kebutuhan saya sehari-hari. Ditambah lagi, sering juga dapat cashback setiap saya bayar cicilan sebelum jatuh tempo. Rasanya makin senang dan betah pakai JULO!",
+    avatar: "user-1.png",
+  },
+  {
+    id: 2,
+    name: "Kristina",
+    age: 35,
+    job: "Ibu Rumah Tangga",
+    review:
+      "Waktu itu lagi coba-coba cari aplikasi kredit terpercaya, liat review JULO bagus dan ternyata memang sangat membantu. Segala kebutuhan dan keperluan bayar kuliah adik bisa langsung terpenuhi pakai limit kredit digital JULO.",
+    avatar: "user-2.png",
+  },
+  {
+    id: 3,
+    name: "Nendi",
+    age: 32,
+    job: "Enterpreneur",
+    review:
+      "Lihat JULO dari iklan, saya coba cari tahu lebih jauh dan ternyata proses pengajuannya sangat mudah dan praktis. Sudah coba 3 kali tarik dana untuk modal usaha dan semuanya memuaskan. Terima kasih JULO sudah membantu saya!",
+    avatar: "user-3.png",
+  },
+];
+
+// Partners
+export const contentPartners = [
+  {
+    id: 1,
+    label: "Tokopedia",
+    media: "Tokopedia.png",
+  },
+  {
+    id: 2,
+    label: "Grab",
+    media: "Grab.png",
+  },
+  {
+    id: 3,
+    label: "Bank Sampoerna",
+    media: "Bank Sampoerna.png",
+  },
+  {
+    id: 4,
+    label: "Sepulsa",
+    media: "Sepulsa.png",
+  },
+  {
+    id: 5,
+    label: "DOKU Wallet",
+    media: "DOKU Wallet.png",
+  },
+];
+
+// Media
+export const contentMedia = [
+  {
+    id: 1,
+    label: "Liputan 6",
+    media: "Liputan 6.png",
+  },
+  {
+    id: 2,
+    label: "Market Insider",
+    media: "Market Insider.png",
+  },
+  {
+    id: 3,
+    label: "Techcrunch",
+    media: "Techcrunch.png",
+  },
+  {
+    id: 4,
+    label: "Kontan",
+    media: "Kontan.png",
+  },
+  {
+    id: 5,
+    label: "Media Indonesia",
+    media: "Media Indonesia.png",
+  },
+  {
+    id: 6,
+    label: "Daily Social",
+    media: "Daily Social.png",
+  },
+  {
+    id: 7,
+    label: "SWA",
+    media: "SWA.png",
+  },
+  {
+    id: 8,
+    label: "Techinasia",
+    media: "Techinasia.png",
+  },
+  {
+    id: 9,
+    label: "VIVA",
+    media: "VIVA.png",
+  },
+  {
+    id: 10,
+    label: "Forbes",
+    media: "Forbes.png",
+  },
+  {
+    id: 11,
+    label: "Sindonews",
+    media: "Sindonews.png",
+  },
+  {
+    id: 12,
+    label: "Medcom",
+    media: "Medcom.png",
+  },
+  {
+    id: 13,
+    label: "Katadata",
+    media: "Katadata.png",
+  },
+  {
+    id: 14,
+    label: "Kompas",
+    media: "Kompas.png",
+  },
+];

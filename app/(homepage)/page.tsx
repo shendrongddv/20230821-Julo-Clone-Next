@@ -1,15 +1,33 @@
+import Link from "next/link";
 import Image from "next/image";
+
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "@/components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+
+// Components
+import WhyUsCard from "@/components/card-why-us";
+import YourNeedCard from "@/components/card-your-need";
 
 // Images
 import imgHero from "../../public/img-1.png";
 import imgQRCode from "../../public/qr-code.png";
 import imgPlaystore from "../../public/playstore.svg";
 
-import Link from "next/link";
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
-import WhyUsCard from "@/components/card-why-us";
-import YourNeedCard from "@/components/card-your-need";
+// Icons
+import { FaQuoteLeft } from "react-icons/fa";
+
+// Contents
+import {
+  contentReviews,
+  contentPartners,
+  contentMedia,
+} from "@/content/content";
 
 export default function Homepage() {
   return (
@@ -175,16 +193,47 @@ export default function Homepage() {
       {/* Reviews */}
       <section
         id="reviews"
-        className="bg-gradient-to-b from-secondary-foreground from-50% to-transparent to-50% px-4 py-16"
+        className="bg-gradient-to-b from-secondary-foreground from-60% to-transparent to-60% px-4 py-16"
       >
-        <div className="container md:px-32">
+        <div className="container space-y-8 md:px-32">
+          {/* Row */}
           <div className="md:w-1/2">
             <h2 className="h2 font-display font-bold text-secondary-foreground text-white">
               Apa Kata Mereka?
             </h2>
-            <p className="mt-3 text-lg font-semibold md:text-xl">
+            <p className="mt-3 text-lg font-semibold text-white md:text-xl">
               Lihat apa kata mereka mengenai pengalaman menggunakan JULO.
             </p>
+          </div>
+
+          {/* Row */}
+          <div className="grid gap-4 md:grid-cols-3">
+            {contentReviews?.map((item) => (
+              <div
+                key={item.id}
+                className="space-y-4 rounded-xl bg-white p-4 shadow-md md:rounded-3xl md:p-6"
+              >
+                <div className="flex items-center gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full">
+                    <Image
+                      src={`/${item.avatar}`}
+                      alt={item.name}
+                      width={48}
+                      height={48}
+                      className="h-full w-auto"
+                    />
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <h4 className="font-display font-bold text-secondary-foreground">
+                      {item.name}, <span>{item.age}</span>
+                    </h4>
+                    <span className="text-sm">{item.job}</span>
+                  </div>
+                </div>
+                <FaQuoteLeft className="h-4 w-4 text-secondary-foreground/50" />
+                <p>{item.review}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -193,6 +242,7 @@ export default function Homepage() {
       {/* Partners */}
       <section id="partners" className="px-4 py-16">
         <div className="container md:px-32">
+          {/* Row */}
           <div className="md:w-1/2">
             <h2 className="h2 font-display font-bold text-secondary-foreground">
               Mitra Terbaik Kami
@@ -202,6 +252,30 @@ export default function Homepage() {
               di Indonesia.
             </p>
           </div>
+
+          {/* Row */}
+          <div className="mt-6 grid grid-cols-3 gap-2 md:grid-cols-5 md:gap-6">
+            {contentPartners?.map((item) => (
+              <TooltipProvider key={item.id}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <div className="flex items-center justify-center rounded-lg border border-slate-100 bg-white p-2 transition duration-300 hover:shadow-md md:rounded-3xl md:p-4">
+                      <Image
+                        src={`/partners/${item.media}`}
+                        alt={item.label}
+                        width={200}
+                        height={100}
+                        className="h-auto w-full"
+                      />
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>{item.label}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            ))}
+          </div>
         </div>
       </section>
       {/* ./ Partners */}
@@ -209,6 +283,7 @@ export default function Homepage() {
       {/* Media */}
       <section id="media" className="bg-slate-100 px-4 py-16">
         <div className="container md:px-32">
+          {/* Row */}
           <div className="md:w-1/2">
             <h2 className="h2 font-display font-bold text-secondary-foreground">
               Publikasi Media
@@ -217,6 +292,30 @@ export default function Homepage() {
               Publikasi JULO meliputi berbagai media terbaik di Indonesia dan
               mancanegara.
             </p>
+          </div>
+
+          {/* Row */}
+          <div className="mt-6 grid grid-cols-3 gap-2 md:grid-cols-5 md:gap-6">
+            {contentMedia?.map((item) => (
+              <TooltipProvider key={item.id}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <div className="flex items-center justify-center rounded-lg border border-slate-100 bg-white p-2 transition duration-300 hover:shadow-md md:rounded-3xl md:p-4">
+                      <Image
+                        src={`/media/${item.media}`}
+                        alt={item.label}
+                        width={200}
+                        height={100}
+                        className="h-auto w-full"
+                      />
+                    </div>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>{item.label}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            ))}
           </div>
         </div>
       </section>
