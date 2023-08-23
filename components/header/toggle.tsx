@@ -72,7 +72,7 @@ export function Toggle() {
                   {item.label}
                   <span className="h-[1px] flex-1 bg-muted-foreground/25"></span>
                 </div>
-                <Accordion asChild type="single" collapsible>
+                <Accordion asChild type="multiple">
                   <ul className="flex w-full flex-col gap-1">
                     {item.subLinks?.map((level2) => (
                       <li key={level2.id} className="w-full">
