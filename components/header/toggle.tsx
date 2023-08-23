@@ -125,7 +125,7 @@ export function Toggle() {
           )}
         </ul>
         {/* ./Body */}
-        <SheetFooter className="mt-auto border-t px-5 py-4">
+        <SheetFooter className="sticky bottom-0 left-0 z-10 mt-auto border-t px-5 py-4">
           <SheetClose asChild>
             <Button variant="destructive" size="default" className="">
               Download Aplikasi JULO
