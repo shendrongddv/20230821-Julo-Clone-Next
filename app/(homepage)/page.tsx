@@ -134,7 +134,7 @@ export default function Homepage() {
         {/* Process */}
         <section id="process" className="px-4 py-16">
           <div className="container space-y-8 rounded-3xl border px-1 py-1 md:border-4 md:border-slate-100 md:px-32 md:py-16">
-            <div className="flex flex-col gap-8">
+            <div className="flex flex-col gap-4 md:gap-8">
               {/* # */}
               <div className="space-y-2 max-md:px-3 max-md:pt-5">
                 <h2 className="h2 font-bold text-secondary-foreground">
@@ -147,11 +147,11 @@ export default function Homepage() {
               </div>
 
               {/* # */}
-              <div className="grid gap-4 md:grid-cols-3">
+              <div className="grid gap-1 md:grid-cols-3 md:gap-6">
                 {contentFastAndSecureProcess?.map((item) => (
                   <div
                     key={item.id}
-                    className="space-y-4 rounded-2xl p-3 transition duration-300 hover:bg-slate-100"
+                    className="space-y-4 rounded-2xl p-4 transition duration-300 hover:bg-slate-100 md:border md:border-slate-100 md:p-6"
                   >
                     <div className="flex items-center gap-4 md:flex-col md:items-start">
                       <div className="flex h-8 w-8 justify-center md:h-12 md:w-12">
@@ -163,7 +163,7 @@ export default function Homepage() {
                           className="h-full w-auto"
                         />
                       </div>
-                      <h3 className="h3 font-display font-bold text-secondary-foreground max-md:w-3/4">
+                      <h3 className="h3 w-3/4 font-display font-bold text-secondary-foreground">
                         {item.title}
                       </h3>
                     </div>
@@ -179,7 +179,7 @@ export default function Homepage() {
         {/* Services */}
         <section id="services" className="px-4 py-16">
           <div className="container space-y-8 md:px-32">
-            <div className="flex flex-col gap-4 md:gap-8">
+            <div className="flex flex-col gap-6 md:gap-8">
               <h2 className="h2 font-bold text-secondary-foreground">
                 Penuhi Segala Kebutuhan Finansialmu Bersama JULO
               </h2>
