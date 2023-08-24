@@ -29,6 +29,7 @@ import {
   contentMedia,
   contentFastAndSecureProcess,
 } from "@/content/content";
+import BannerSlider from "@/components/banner-slider";
 
 export default function Homepage() {
   return (
@@ -120,12 +121,9 @@ export default function Homepage() {
       {/* ./ Simulation */}
 
       {/* Banner */}
-      <section id="ID" className="px-4 py-16">
-        <div className="container space-y-8 md:px-32">
-          <div className="flex">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            ea veniam cumque.
-          </div>
+      <section id="ID" className="py-16 md:px-4">
+        <div className="container">
+          <BannerSlider />
         </div>
       </section>
       {/* ./ Banner */}

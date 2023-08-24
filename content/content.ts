@@ -1,3 +1,43 @@
+// Banners Section
+export const contentBanners = [
+  // {
+  //   id: 1,
+  //   label: "Banner 1",
+  //   media: { desktop: "1.png", mobile: "1-mobile.png" },
+  //   url: "/",
+  // },
+  {
+    id: 2,
+    label: "Banner 2",
+    media: { desktop: "2.png", mobile: "2-mobile.png" },
+    url: "/",
+  },
+  {
+    id: 3,
+    label: "Banner 3",
+    media: { desktop: "3.png", mobile: "3-mobile.png" },
+    url: "/",
+  },
+  {
+    id: 4,
+    label: "Banner 4",
+    media: { desktop: "4.jpg", mobile: "4-mobile.webp" },
+    url: "/",
+  },
+  {
+    id: 5,
+    label: "Banner 5",
+    media: { desktop: "5.jpg", mobile: "5-mobile.webp" },
+    url: "/",
+  },
+  // {
+  //   id: 6,
+  //   label: "Banner 6",
+  //   media: { desktop: "6.png", mobile: "6-mobile.png" },
+  //   url: "/",
+  // },
+];
+
 //
 export const contentFastAndSecureProcess = [
   {

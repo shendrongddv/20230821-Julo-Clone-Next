@@ -108,3 +108,14 @@ h6 {
 .subtitle {
   @apply text-lg md:text-xl;
 }
+
+/* Swiper */
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 1rem;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 2rem !important;
+  border-radius: 999px !important;
+}
