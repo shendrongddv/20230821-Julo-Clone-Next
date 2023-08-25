@@ -38,6 +38,40 @@ export const contentBanners = [
   // },
 ];
 
+// Promotions
+export const contentPromotions = [
+  {
+    id: 1,
+    label: "Promo 1",
+    media: { desktop: "1.png", mobile: null },
+    url: "/",
+  },
+  {
+    id: 2,
+    label: "Promo 2",
+    media: { desktop: "2.png", mobile: null },
+    url: "/",
+  },
+  {
+    id: 3,
+    label: "Promo 3",
+    media: { desktop: "3.png", mobile: null },
+    url: "/",
+  },
+  {
+    id: 4,
+    label: "Promo 4",
+    media: { desktop: "4.png", mobile: null },
+    url: "/",
+  },
+  {
+    id: 5,
+    label: "Promo 5",
+    media: { desktop: "5.webp", mobile: null },
+    url: "/",
+  },
+];
+
 //
 export const contentFastAndSecureProcess = [
   {

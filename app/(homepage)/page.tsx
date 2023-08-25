@@ -30,6 +30,7 @@ import {
   contentFastAndSecureProcess,
 } from "@/content/content";
 import BannerSlider from "@/components/banner-slider";
+import PromoSlider from "@/components/promo-slider";
 
 export default function Homepage() {
   return (
@@ -191,11 +192,41 @@ export default function Homepage() {
       </div>
 
       {/* Promotion */}
-      <section id="promotion" className="px-4 py-16">
+      <section id="promotions" className="bg-secondary-foreground px-4 py-16">
         <div className="container space-y-8 md:px-32">
-          <div className="flex">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            ea veniam cumque.
+          <div className="grid items-center gap-8 md:grid-cols-2">
+            {/* Col */}
+            <div>
+              <h2 className="h2 font-display font-bold text-secondary-foreground text-white">
+                Serbu Promo Menarik dari JULO
+              </h2>
+              <p className="mt-3 text-lg font-semibold text-white md:text-xl">
+                Temukan dan nikmati aneka promo produk finansial terbaik spesial
+                untuk kamu!
+              </p>
+            </div>
+
+            {/* Col */}
+            <div className="order-3 flex md:order-2 md:justify-end">
+              <Link
+                href="/"
+                className={cn(
+                  buttonVariants({
+                    variant: "outline",
+                    size: "lg",
+                    className:
+                      "w-full bg-transparent font-bold text-white md:w-max",
+                  }),
+                )}
+              >
+                Lihat Promo Lainnya
+              </Link>
+            </div>
+
+            {/* Col */}
+            <div className="order-2 md:order-3 md:col-span-2">
+              <PromoSlider />
+            </div>
           </div>
         </div>
       </section>
