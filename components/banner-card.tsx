@@ -12,15 +12,15 @@ const BannerCard: React.FC<BannerCardProps> = ({ url, desktop, mobile }) => {
       <Image
         src={`/banners/${desktop}`}
         alt="Image"
-        width={1296}
-        height={300}
+        width={1280}
+        height={297}
         className="hidden h-auto w-full md:flex"
       />
       <Image
         src={`/banners/${mobile}`}
         alt="Image"
-        width={1296}
-        height={300}
+        width={480}
+        height={620}
         className="flex h-auto w-full md:hidden"
       />
     </div>

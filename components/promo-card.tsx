@@ -11,8 +11,8 @@ const PromoCard: React.FC<PromoCardProps> = ({ url, desktop }) => {
       <Image
         src={`/promotions/${desktop}`}
         alt="Image"
-        width={1296}
-        height={300}
+        width={1140}
+        height={570}
         className="h-auto w-full"
       />
     </div>

@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-display;
+}
+
+.h1 {
+  @apply text-3xl font-bold leading-snug md:text-5xl;
+}
+
+.h2 {
+  @apply text-2xl font-bold leading-snug md:text-[32px];
+}
+
+.h3 {
+  @apply text-lg font-bold leading-snug md:text-xl;
+}
+
+.h4 {
+  @apply leading-snug;
+}
+
+.subtitle {
+  @apply text-lg md:text-xl;
+}
+
+.large {
+  @apply text-[17px] md:text-lg;
+}

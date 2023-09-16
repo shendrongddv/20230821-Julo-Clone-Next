@@ -11,7 +11,7 @@ import "swiper/css/effect-fade";
 import { Pagination, Navigation, Autoplay, EffectFade } from "swiper/modules";
 
 // Contents
-import { contentBanners } from "@/content/content";
+import { contentBanners } from "@/config/dummy";
 import BannerCard from "./banner-card";
 
 const BannerSlider = () => {
@@ -45,12 +45,12 @@ const BannerSlider = () => {
         },
         1024: {
           slidesPerView: "auto",
-          spaceBetween: 24,
+          spaceBetween: 32,
         },
 
         1140: {
           slidesPerView: "auto",
-          spaceBetween: 24,
+          spaceBetween: 32,
         },
       }}
       className=""

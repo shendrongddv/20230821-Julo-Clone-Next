@@ -31,6 +31,8 @@ import {
 } from "@/content/content";
 import BannerSlider from "@/components/banner-slider";
 import PromoSlider from "@/components/promo-slider";
+import SPartner from "@/components/s-partner";
+import SNewsMedia from "@/components/s-news-media";
 
 export default function Homepage() {
   return (
@@ -292,87 +294,13 @@ export default function Homepage() {
       </section>
       {/* ./ Reviews */}
 
-      {/* Partners */}
-      <section id="partners" className="px-4 py-16">
-        <div className="container md:px-32">
-          {/* Row */}
-          <div className="md:w-1/2">
-            <h2 className="h2 font-display font-bold text-secondary-foreground">
-              Mitra Terbaik Kami
-            </h2>
-            <p className="mt-3 text-lg font-semibold md:text-xl">
-              Mitra terbaik kami meliputi lembaga keuangan perbankan dan nonbank
-              di Indonesia.
-            </p>
-          </div>
+      {/* Partner */}
+      <SPartner />
+      {/* ./ Partner */}
 
-          {/* Row */}
-          <div className="mt-6 grid grid-cols-3 gap-2 md:grid-cols-5 md:gap-6">
-            {contentPartners?.map((item) => (
-              <TooltipProvider key={item.id}>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <div className="flex items-center justify-center rounded-lg border border-slate-100 bg-white p-2 transition duration-300 hover:shadow-md md:rounded-3xl md:p-4">
-                      <Image
-                        src={`/partners/${item.media}`}
-                        alt={item.label}
-                        width={200}
-                        height={100}
-                        className="h-auto w-full"
-                      />
-                    </div>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>{item.label}</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-            ))}
-          </div>
-        </div>
-      </section>
-      {/* ./ Partners */}
-
-      {/* Media */}
-      <section id="media" className="bg-slate-100 px-4 py-16">
-        <div className="container md:px-32">
-          {/* Row */}
-          <div className="md:w-1/2">
-            <h2 className="h2 font-display font-bold text-secondary-foreground">
-              Publikasi Media
-            </h2>
-            <p className="mt-3 text-lg font-semibold md:text-xl">
-              Publikasi JULO meliputi berbagai media terbaik di Indonesia dan
-              mancanegara.
-            </p>
-          </div>
-
-          {/* Row */}
-          <div className="mt-6 grid grid-cols-3 gap-2 md:grid-cols-5 md:gap-6">
-            {contentMedia?.map((item) => (
-              <TooltipProvider key={item.id}>
-                <Tooltip>
-                  <TooltipTrigger asChild>
-                    <div className="flex items-center justify-center rounded-lg border border-slate-100 bg-white p-2 transition duration-300 hover:shadow-md md:rounded-3xl md:p-4">
-                      <Image
-                        src={`/media/${item.media}`}
-                        alt={item.label}
-                        width={200}
-                        height={100}
-                        className="h-auto w-full"
-                      />
-                    </div>
-                  </TooltipTrigger>
-                  <TooltipContent>
-                    <p>{item.label}</p>
-                  </TooltipContent>
-                </Tooltip>
-              </TooltipProvider>
-            ))}
-          </div>
-        </div>
-      </section>
-      {/* ./ Media */}
+      {/* News Media */}
+      <SNewsMedia />
+      {/* ./ News Media */}
 
       {/* CTA */}
       <section

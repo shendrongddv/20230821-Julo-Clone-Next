@@ -14,7 +14,7 @@ import { Pagination, Navigation, Autoplay, EffectFade } from "swiper/modules";
 import PromoCard from "./promo-card";
 
 // Contents
-import { contentPromotions } from "@/content/content";
+import { contentPromotions } from "@/config/dummy";
 
 const PromoSlider = () => {
   const items = contentPromotions;
