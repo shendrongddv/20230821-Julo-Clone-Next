@@ -47,7 +47,7 @@ export const SingleBrand = ({ name, media }: SingleBrandProps) => {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
-          <li className="flex-shrink-0 rounded-xl border border-input p-4">
+          <li className="flex-shrink-0 rounded-xl border border-input p-3 md:p-4">
             <Image
               src={`/brand/${media}`}
               alt={name}
